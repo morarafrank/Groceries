@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="16dp"
+    android:layout_margin="16dp"
+    tools:context=".ui.fragments.AddGroceriesFragment"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/text_item_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:hint="Item Name"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/text_item_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:hint="Description"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/text_item_name"
+        app:layout_constraintStart_toStartOf="@+id/text_item_name"
+        app:layout_constraintTop_toBottomOf="@+id/text_item_name"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/text_item_quantity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:hint="Quantity"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/text_item_description"
+        app:layout_constraintStart_toStartOf="@+id/text_item_description"
+        app:layout_constraintTop_toBottomOf="@+id/text_item_description"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Add"
+        app:layout_constraintEnd_toEndOf="@+id/text_item_quantity"
+        app:layout_constraintStart_toStartOf="@+id/text_item_quantity"
+        app:layout_constraintTop_toBottomOf="@+id/text_item_quantity" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
